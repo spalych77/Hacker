@@ -1,0 +1,351 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8B074C8C-3F76-4337-B872-1390699C728F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Hacker</RootNamespace>
+    <AssemblyName>Hacker</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Bird.cs" />
+    <Compile Include="Classes\Cactus.cs" />
+    <Compile Include="Classes\GameController.cs" />
+    <Compile Include="Classes\Physics.cs" />
+    <Compile Include="Classes\Dinosaur.cs" />
+    <Compile Include="Classes\Road.cs" />
+    <Compile Include="Classes\Transform.cs" />
+    <Compile Include="Dino.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dino.Designer.cs">
+      <DependentUpon>Dino.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fun.Designer.cs">
+      <DependentUpon>Fun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HackHelp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HackHelp.Designer.cs">
+      <DependentUpon>HackHelp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dead.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dead.Designer.cs">
+      <DependentUpon>Dead.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Description.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Description.Designer.cs">
+      <DependentUpon>Description.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DNS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DNS.Designer.cs">
+      <DependentUpon>DNS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Errors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Errors.Designer.cs">
+      <DependentUpon>Errors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Greeting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Greeting.Designer.cs">
+      <DependentUpon>Greeting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Game.Designer.cs">
+      <DependentUpon>Game.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hack.Designer.cs">
+      <DependentUpon>Hack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HackShop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HackShop.Designer.cs">
+      <DependentUpon>HackShop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HackTasks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HackTasks.Designer.cs">
+      <DependentUpon>HackTasks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Loan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Loan.Designer.cs">
+      <DependentUpon>Loan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mining.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mining.Designer.cs">
+      <DependentUpon>Mining.cs</DependentUpon>
+    </Compile>
+    <Compile Include="obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
+    <Compile Include="Classes\PC.cs" />
+    <Compile Include="Classes\PL.cs" />
+    <Compile Include="Classes\Player.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Soft.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Soft.Designer.cs">
+      <DependentUpon>Soft.cs</DependentUpon>
+    </Compile>
+    <Compile Include="System\Windows\Threading.cs" />
+    <Compile Include="Mission.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mission.Designer.cs">
+      <DependentUpon>Mission.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Win.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Win.Designer.cs">
+      <DependentUpon>Win.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WMPLib\WindowsMediaPlayer.cs" />
+    <Compile Include="Work.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Work.Designer.cs">
+      <DependentUpon>Work.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dino.resx">
+      <DependentUpon>Dino.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fun.resx">
+      <DependentUpon>Fun.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HackHelp.resx">
+      <DependentUpon>HackHelp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dead.resx">
+      <DependentUpon>Dead.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Description.resx">
+      <DependentUpon>Description.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DNS.resx">
+      <DependentUpon>DNS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Errors.resx">
+      <DependentUpon>Errors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Greeting.resx">
+      <DependentUpon>Greeting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game.resx">
+      <DependentUpon>Game.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hack.resx">
+      <DependentUpon>Hack.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HackShop.resx">
+      <DependentUpon>HackShop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HackTasks.resx">
+      <DependentUpon>HackTasks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loan.resx">
+      <DependentUpon>Loan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mining.resx">
+      <DependentUpon>Mining.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mission.resx">
+      <DependentUpon>Mission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\Debug\Hacker.Bulletin.resources" />
+    <EmbeddedResource Include="obj\Debug\Hacker.Dead.resources" />
+    <EmbeddedResource Include="obj\Debug\Hacker.Description.resources" />
+    <EmbeddedResource Include="obj\Debug\Hacker.DNS.resources" />
+    <EmbeddedResource Include="obj\Debug\Hacker.Errors.resources" />
+    <EmbeddedResource Include="obj\Debug\Hacker.FrmHello.resources" />
+    <EmbeddedResource Include="obj\Debug\Hacker.Game.resources" />
+    <EmbeddedResource Include="obj\Debug\Hacker.Greeting.resources" />
+    <EmbeddedResource Include="obj\Debug\Hacker.Hack.resources" />
+    <EmbeddedResource Include="obj\Debug\Hacker.HackHelp.resources" />
+    <EmbeddedResource Include="obj\Debug\Hacker.HackShop.resources" />
+    <EmbeddedResource Include="obj\Debug\Hacker.HackTasks.resources" />
+    <EmbeddedResource Include="obj\Debug\Hacker.Loan.resources" />
+    <EmbeddedResource Include="obj\Debug\Hacker.Mining.resources" />
+    <EmbeddedResource Include="obj\Debug\Hacker.Missions.resources" />
+    <EmbeddedResource Include="obj\Debug\Hacker.Properties.Resources.resources" />
+    <EmbeddedResource Include="obj\Debug\Hacker.Soft.resources" />
+    <EmbeddedResource Include="obj\Debug\Hacker.Work.resources" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Soft.resx">
+      <DependentUpon>Soft.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Win.resx">
+      <DependentUpon>Win.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Work.resx">
+      <DependentUpon>Work.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="bin\Debug\Hacker.exe.config" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\Dino.csproj.AssemblyReference.cache" />
+    <None Include="obj\Debug\Hacker.csproj.AssemblyReference.cache" />
+    <None Include="obj\Debug\Hacker.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\Hacker.csproj.GenerateResource.cache" />
+    <None Include="obj\Debug\Hacker.csproj.SuggestedBindingRedirects.cache" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\description.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\error.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\matrix.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hacker.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sound.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Muted.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SecondPC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FirstPC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ThirdPC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FourthPC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FifthPC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NullPC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\Click.wav" />
+    <Content Include="bin\Debug\Hacker.exe" />
+    <Content Include="bin\Debug\Hacker.pdb" />
+    <Content Include="bin\Debug\MatrixMainTheme.wav" />
+    <Content Include="obj\Debug\Hacker.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\Hacker.exe" />
+    <Content Include="obj\Debug\Hacker.pdb" />
+    <Content Include="obj\Debug\TempPE\Properties.Resources.Designer.cs.dll" />
+    <None Include="Resources\sprite.png" />
+    <None Include="Resources\DeadFace.png" />
+    <None Include="Resources\HappyFace.png" />
+    <None Include="Resources\NormalFace.png" />
+    <None Include="Resources\SadlyFace.png" />
+    <None Include="Resources\dino.ico" />
+    <None Include="Resources\dead.ico" />
+    <None Include="Resources\shop.ico" />
+    <None Include="Resources\fun.ico" />
+    <None Include="Resources\work.ico" />
+    <None Include="Resources\hack.ico" />
+    <None Include="Resources\win.ico" />
+    <None Include="Resources\loan.ico" />
+    <None Include="Resources\crypto.ico" />
+    <None Include="Resources\soft.ico" />
+    <Content Include="ProverkaGitHub.txt" />
+    <Content Include="Sprites\sprite.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
