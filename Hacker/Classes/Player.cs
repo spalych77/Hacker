@@ -47,7 +47,7 @@ namespace Hacker
         }
 
         //Деньги игрока.
-        public static int money = 10000;
+        public static int money = 50_000;
         public static int Money
         {
             get { return money; }

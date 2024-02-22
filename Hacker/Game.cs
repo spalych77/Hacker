@@ -40,7 +40,7 @@ namespace Hacker
         private async void Game_Load(object sender, EventArgs e)
         {
             //Вкл музыки.
-            Music.PlayLooping();
+            //Music.PlayLooping();
 
             //Начало игры. Приветствие с игроком.
             MessageBox.Show(Player.hello, "Приветствуем!");
@@ -477,7 +477,7 @@ namespace Hacker
         //Открыть форму с работой.
         private void btnOpenWork_Click(object sender, EventArgs e)
         {
-            Click.Play();
+            //.Play();
             Work work = new Work();
             work.Show();
             work.FormClosed += (s, a) => btnOpenWork.Enabled = true;
@@ -487,7 +487,7 @@ namespace Hacker
         //Конвертация крипты в деньги
         private void btnConvertCoins_Click(object sender, EventArgs e)
         {
-            Click.Play();
+            //Play();
             Player.money += (Player.coins[0] * 100);
             Player.money += (Player.coins[1] * 125);
             Player.money += (Player.coins[2] * 150);
@@ -496,7 +496,7 @@ namespace Hacker
         //Открыть форму с хакерством.
         private void btnOpenHack_Click(object sender, EventArgs e)
         {
-            Click.Play();
+            //Play();
             Hack hack = new Hack();
             hack.Show();
             hack.FormClosed += (s, a) => btnOpenHack.Enabled = true;
@@ -506,7 +506,7 @@ namespace Hacker
         //Открыть форму с развлеченями.
         private void btnOpenFun_Click(object sender, EventArgs e)
         {
-            Click.Play();
+            //Play();
             Fun fun = new Fun();
             fun.Show();
             fun.FormClosed += (s, a) => btnOpenFun.Enabled = true;
@@ -516,7 +516,7 @@ namespace Hacker
         //Открыть форму магазина компьютеров.
         private void btnOpenShop_Click(object sender, EventArgs e)
         {
-            Click.Play();
+            //Play();
             DNS dns = new DNS();
             dns.Show();
             dns.FormClosed += (s, a) => btnOpenShop.Enabled = true;
@@ -526,7 +526,7 @@ namespace Hacker
         //Открыть форму с майнингом
         private void btnOpenMining_Click(object sender, EventArgs e)
         {
-            Click.Play();
+            //Play();
             Mining mining = new Mining();
             mining.Show();
             mining.FormClosed += (s, a) => btnOpenMining.Enabled = true;
@@ -536,7 +536,7 @@ namespace Hacker
         //Открыть форму с софтом.
         private void btnOpenSoft_Click(object sender, EventArgs e)
         {
-            Click.Play();
+            //Play();
             Soft soft = new Soft();
             soft.Show();
             soft.FormClosed += (s, a) => btnOpenSoft.Enabled = true;
@@ -546,7 +546,7 @@ namespace Hacker
         //Открыть форму с кредитами
         private void btnOpenLoan_Click(object sender, EventArgs e)
         {
-            Click.Play();
+            //Play();
             Loan loan = new Loan();
             loan.Show();
             loan.FormClosed += (s, a) => btnOpenLoan.Enabled = true;
@@ -620,7 +620,7 @@ namespace Hacker
             if (toolStripMusic.Checked == true)
             {
                 toolStripMusic.Image = Hacker.Properties.Resources.sound;
-                Music.Play();
+                //Music.Play();
             }
             else if (toolStripMusic.Checked == false)
             {

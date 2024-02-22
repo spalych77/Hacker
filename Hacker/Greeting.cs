@@ -6,20 +6,20 @@ namespace Hacker
 {
     public partial class Greeting : Form
     {
-        SoundPlayer Music = new SoundPlayer();
-        SoundPlayer Click = new SoundPlayer();
+        //SoundPlayer Music = new SoundPlayer();
+        //SoundPlayer Click = new SoundPlayer();
         public Greeting()
         {
             InitializeComponent();
-            Music.SoundLocation = "MatrixMainTheme.wav";
-            Click.SoundLocation = "Click.wav";
-            Music.PlayLooping();
+            //Music.SoundLocation = "MatrixMainTheme.wav";
+            //Click.SoundLocation = "Click.wav";
+            //Music.PlayLooping();
         }
 
         //При загрузки формы включать музыку
         private void FrmHello_Load(object sender, EventArgs e)
         {
-            Music.Play();
+           //Music.Play();
         }
 
         //Передаёт Player.Name значения с текстбокса.
@@ -31,7 +31,7 @@ namespace Hacker
         //Запускает игру.
         private void btnEnter_Click(object sender, EventArgs e)
         {
-            Click.Play();
+            //Click.Play();
             if ((Player.Name != "") && (Player.Name.Length < 16))
             {
                 Game game = new Game();
@@ -93,12 +93,12 @@ namespace Hacker
             if (toolStripMusic.Checked == true)
             {
                 toolStripMusic.Image = Hacker.Properties.Resources.sound;
-                Music.Play();
+                //Music.Play();
             }
             else if (toolStripMusic.Checked == false)
             {
                 toolStripMusic.Image = Hacker.Properties.Resources.muted;
-                Music.Stop();
+                //Music.Stop();
             }
         }
     }
