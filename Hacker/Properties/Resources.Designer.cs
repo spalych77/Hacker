@@ -61,15 +61,6 @@ namespace Hacker.Properties {
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.IO.UnmanagedMemoryStream, аналогичного System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream Click {
-            get {
-                return ResourceManager.GetStream("Click", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Icon, аналогичного (Значок).
         /// </summary>
         public static System.Drawing.Icon crypto {
@@ -216,15 +207,6 @@ namespace Hacker.Properties {
             get {
                 object obj = ResourceManager.GetObject("matrix", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.IO.UnmanagedMemoryStream, аналогичного System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream MatrixMainTheme {
-            get {
-                return ResourceManager.GetStream("MatrixMainTheme", resourceCulture);
             }
         }
         

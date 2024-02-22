@@ -228,12 +228,10 @@
     <EmbeddedResource Include="Mission.resx">
       <DependentUpon>Mission.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="obj\Debug\Hacker.Bulletin.resources" />
     <EmbeddedResource Include="obj\Debug\Hacker.Dead.resources" />
     <EmbeddedResource Include="obj\Debug\Hacker.Description.resources" />
     <EmbeddedResource Include="obj\Debug\Hacker.DNS.resources" />
     <EmbeddedResource Include="obj\Debug\Hacker.Errors.resources" />
-    <EmbeddedResource Include="obj\Debug\Hacker.FrmHello.resources" />
     <EmbeddedResource Include="obj\Debug\Hacker.Game.resources" />
     <EmbeddedResource Include="obj\Debug\Hacker.Greeting.resources" />
     <EmbeddedResource Include="obj\Debug\Hacker.Hack.resources" />
@@ -261,13 +259,10 @@
       <DependentUpon>Work.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="bin\Debug\Hacker.exe.config" />
-    <None Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
     <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
-    <None Include="obj\Debug\Dino.csproj.AssemblyReference.cache" />
     <None Include="obj\Debug\Hacker.csproj.AssemblyReference.cache" />
     <None Include="obj\Debug\Hacker.csproj.CoreCompileInputs.cache" />
     <None Include="obj\Debug\Hacker.csproj.GenerateResource.cache" />
-    <None Include="obj\Debug\Hacker.csproj.SuggestedBindingRedirects.cache" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -326,8 +321,6 @@
     <Content Include="bin\Debug\Hacker.pdb" />
     <Content Include="bin\Debug\MatrixMainTheme.wav" />
     <Content Include="obj\Debug\Hacker.csproj.FileListAbsolute.txt" />
-    <Content Include="obj\Debug\Hacker.exe" />
-    <Content Include="obj\Debug\Hacker.pdb" />
     <Content Include="obj\Debug\TempPE\Properties.Resources.Designer.cs.dll" />
     <None Include="Resources\sprite.png" />
     <None Include="Resources\DeadFace.png" />
